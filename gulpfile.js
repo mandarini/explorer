@@ -12,7 +12,7 @@ function copy() {
         'app/**/*.json',
         './service-worker.js'
     ])
-        .pipe(gulp.dest('build'));
+        .pipe(gulp.dest('docs'));
 }
 gulp.task('copy', copy);
 
@@ -33,7 +33,7 @@ function processJs() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('build/scripts'));
+        .pipe(gulp.dest('docs/scripts'));
 }
 
 gulp.task('processJs', processJs);
@@ -44,7 +44,7 @@ function processCss() {
     .pipe(rename({
         suffix: '.min'
     }))
-    .pipe(gulp.dest('build/styles'));
+    .pipe(gulp.dest('docs/styles'));
 }
  
 gulp.task('processCss', processCss);
