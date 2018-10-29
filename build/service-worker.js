@@ -5,7 +5,7 @@ self.addEventListener('install', function(event) {
       return cache.addAll([
         '.',
         'index.html',
-        'styles/main.min.css',
+        'styles/main.css',
         'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
       ]);
     })

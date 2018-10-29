@@ -9,6 +9,8 @@ function copy() {
     return gulp.src([
         'app/*.html',
         'app/**/*.jpg',
+        'app/**/*.json',
+        './service-worker.js'
     ])
         .pipe(gulp.dest('build'));
 }
