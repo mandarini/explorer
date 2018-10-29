@@ -7,7 +7,6 @@ self.addEventListener('install', function(event) {
         'index.html',
         'styles/main.css',
         'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
-        'images/still_life-1600_large_2x.jpg',
       ]);
     })
   );
