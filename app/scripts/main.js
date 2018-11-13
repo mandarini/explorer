@@ -21,7 +21,7 @@ butInstall.addEventListener('click', () => {
     return;
   }
   // Show the install prompt.
-  promptEvent.prompt();
+  promptEvent.pbutInstallrompt();
   // Log the result
   promptEvent.userChoice.then((result) => {
     console.log('👍', 'userChoice', result);
