@@ -11,9 +11,12 @@
   ],
   "author": "katerina",
   "license": "ISC",
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.3",

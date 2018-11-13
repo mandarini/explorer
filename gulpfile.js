@@ -18,7 +18,7 @@ gulp.task('copy', copy);
 
 function serve() {
     return browserSync.init({
-        server: 'build',
+        server: 'docs',
         open: false,
         port: 3000
     });
@@ -27,7 +27,7 @@ function serve() {
 function processJs() {
     return gulp.src('app/scripts/*.js')
         .pipe(babel({
-            presets: ['env']
+            presets: ['@babel/env']
         }))
         .pipe(uglify())
         .pipe(rename({

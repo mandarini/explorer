@@ -22,3 +22,9 @@ self.addEventListener('fetch', function(event) {
     })
   );
 });
+
+
+self.addEventListener('activate', (event) => {
+  console.log('👷', 'activate', event);
+  return self.clients.claim();
+});
