@@ -5,9 +5,9 @@ self.addEventListener('install', function(event) {
       return cache.addAll([
         '.',
         '/',
-        'explorer/index.html',
-        'explorer/styles/main.min.css',
-        'explorer/assets/offline.png',
+        'index.html',
+        'styles/main.min.css',
+        'assets/offline.png',
         'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
       ]);
     })
@@ -23,7 +23,7 @@ self.addEventListener('fetch', function(event) {
     }).catch(function() {
       // If there's an image, return girly!
       if (event.request.url.endsWith('.webp')) {
-        return caches.match('explorer/assets/offline.png');
+        return caches.match('assets/offline.png');
       }
     })
   );
