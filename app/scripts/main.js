@@ -17,6 +17,7 @@ butInstall.addEventListener('click', () => {
   promptEvent.prompt();
   promptEvent.userChoice.then((result) => {
     console.log('👍', 'userChoice', result);
+    divInstall.classList.toggle('hidden', true);
 
     window.deferredPrompt = null;
   });
