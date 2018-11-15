@@ -8,7 +8,9 @@ const cleanCSS = require('gulp-clean-css');
 function copy() {
     return gulp.src([
         'app/*.html',
+        'app/**/*.webp',
         'app/**/*.jpg',
+        'app/**/*.png',
         'app/**/*.json',
         './service-worker.js'
     ])
