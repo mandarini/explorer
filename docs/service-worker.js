@@ -7,7 +7,6 @@ self.addEventListener('install', function(event) {
         '/',
         'index.html',
         'styles/main.min.css',
-        'assets/offline.png',
         'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
       ]);
     })
