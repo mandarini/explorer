@@ -23,19 +23,17 @@ h1 {
 }
 
 #installContainer {
-  position: absolute;
-  bottom: 1em;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   width: 100%;
 }
 
 #installContainer button {
   background-color: inherit;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  color:black;
   font-size: 1em;
-  padding: 0.75em;
+  padding: 6px;
 }
 
 .bio {
