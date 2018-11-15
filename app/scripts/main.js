@@ -31,7 +31,7 @@ window.addEventListener('appinstalled', (event) => {
 });
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/explorer/service-worker.js', {scope: '/explorer'});
+  navigator.serviceWorker.register('/explorer/service-worker.js', {scope: '/explorer/'});
 }
 
 if (window.location.protocol === 'http:') {
