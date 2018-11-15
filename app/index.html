@@ -85,8 +85,8 @@
     <div class="bio">
       <div class="img-cont">
         <div class="images">
-          <img class="profile" src="https://pbs.twimg.com/profile_images/378800000866963856/wICr2rBP_400x400.jpeg" alt="Katerina's Profile Picture" />
-          <img class="angular" src="https://secure.meetupstatic.com/photos/member/4/a/a/1/thumb_280759105.jpeg" alt="Angular Athens Logo" />
+          <img class="profile" src="assets/katerina.webp" alt="Katerina's Profile Picture" />
+          <img class="angular" src="assets/angularathens.webp" alt="Angular Athens Logo" />
         </div>
       </div>
       <p>
@@ -106,7 +106,7 @@
         appearances!
       </p>
       <div class="embeds">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bf6VdqNbRVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        <iframe title="YouTube Video of Katerina" width="560" height="315" src="https://www.youtube.com/embed/Bf6VdqNbRVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
         <a class="twitter-timeline" data-width="300" data-height="400" data-theme="light" data-link-color="#981CEB"
           href="https://twitter.com/psybercity?ref_src=twsrc%5Etfw">Tweets
@@ -117,12 +117,12 @@
     <div class="bottom-img">
       <div class="girly">
         <img src="assets/girly1.webp" alt="Girly 1" />
-        <img src="assets/girly2.webp" alt="Girly 2" onclick="clicked()" />
+        <img src="assets/girly2.webp" alt="Girly 2" onclick="clicked()" tabindex="0" role="button" />
       </div>
     </div>
 
     <div id="installContainer" class="hidden">
-      <button id="butInstall" type="button">
+      <button id="butInstall" type="button" aria-label="Install button">
         Install
       </button>
     </div>
