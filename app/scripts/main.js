@@ -40,3 +40,7 @@ if (window.location.protocol === 'http:') {
   link.href = window.location.href.replace('http://', 'https://');
   requireHTTPS.classList.remove('hidden');
 }
+
+function clicked() {
+  window.alert('OMG! You clicked large Girly!');
+}

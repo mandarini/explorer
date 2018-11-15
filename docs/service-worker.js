@@ -7,6 +7,7 @@ self.addEventListener('install', function(event) {
         '/',
         'index.html',
         'styles/main.min.css',
+        'assets/offline.png',
         'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
       ]);
     })
@@ -24,8 +25,7 @@ self.addEventListener('fetch', function(event) {
   );
 });
 
-
-self.addEventListener('activate', {scope: '/explorer'},  function(event) {
+self.addEventListener('activate', function(event) {
   console.log('Activated', 'activate', event);
   return self.clients.claim();
 });

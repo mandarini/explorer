@@ -23,16 +23,40 @@
   <header>
     <h1>Katerina's Page</h1>
   </header>
-
   <main>
-    Katerinoula
-      test
-    <p id="requireHTTPS" class="hidden">
+    <div class="bio">
+      <div class="images">
+          <img class="profile" src="https://pbs.twimg.com/profile_images/378800000866963856/wICr2rBP_400x400.jpeg" alt="Katerina's Profile Picture"/>
+          <img class="angular" src="https://secure.meetupstatic.com/photos/member/4/a/a/1/thumb_280759105.jpeg" alt="Angular Athens Logo"/>
+      </div>
+      <p>
+        Katerina is a Google Developer Expert for Angular and a software engineer, 
+        focused on the web front end. 
+        She speaks at international conferences and co-organizes the <a href="https://twitter.com/AthensAngular">Angular Athens meetup</a>.
+        She is indigenous to the internet, and she loves web development. 
+        So much that she does not understand the distinction between work and life sometimes. 
+        Or so her friends say. She lives with her Maine Coon in Athens, Greece.
+      </p>
+    </div>
+
+    <div class="social">
+      <p>
+          Here is the link to <a href="https://mandarini.github.io/">my website</a>! And below are some of my social appearances!
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Bf6VdqNbRVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a class="twitter-timeline" data-width="300" data-height="400" data-theme="light" data-link-color="#981CEB" href="https://twitter.com/psybercity?ref_src=twsrc%5Etfw">Tweets by beautiful me</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <div class="girly">
+        <img src="assets/girly1.jpg" alt="Girly 1"/>
+        <img src="assets/girly2.jpg" alt="Girly 2" onclick="clicked()"/>
+    </div>
+  
+    <!-- <p id="requireHTTPS" class="hidden">
       <b>STOP!</b> This page <b>must</b> be served over HTTPS.
       Please <a>reload this page via HTTPS</a>.
-    </p>
+    </p> -->
 
-    <!-- Install button, hidden by default -->
     <div id="installContainer" class="hidden">
       <button id="butInstall" type="button">
         Install
