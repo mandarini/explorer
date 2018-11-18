@@ -3,20 +3,20 @@ const divInstall = document.getElementById('installContainer');
 const butInstall = document.getElementById('butInstall');
 
 window.addEventListener('beforeinstallprompt', (event) => {
-  console.log('👍', 'beforeinstallprompt', event);
+  console.log('ok', 'beforeinstallprompt', event);
   window.deferredPrompt = event;
   divInstall.classList.toggle('hidden', false);
 });
 
 butInstall.addEventListener('click', () => {
-  console.log('👍', 'butInstall-clicked');
+  console.log('ok', 'butInstall-clicked');
   const promptEvent = window.deferredPrompt
   if (!promptEvent) {
     return;
   }
   promptEvent.prompt();
   promptEvent.userChoice.then((result) => {
-    console.log('👍', 'userChoice', result);
+    console.log('ok', 'userChoice', result);
     divInstall.classList.toggle('hidden', true);
 
     window.deferredPrompt = null;
@@ -24,7 +24,7 @@ butInstall.addEventListener('click', () => {
 });
 
 window.addEventListener('appinstalled', (event) => {
-  console.log('👍', 'appinstalled', event);
+  console.log('ok', 'appinstalled', event);
 });
 
 if ('serviceWorker' in navigator) {
