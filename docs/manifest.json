@@ -34,7 +34,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "https://mandarini.github.io/explorer/",
   "background_color": "#cccccc",
   "display": "standalone",
   "scope": "/",
