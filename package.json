@@ -12,7 +12,9 @@
   "author": "katerina",
   "license": "ISC",
   "babel": {
-    "presets": ["@babel/preset-env"]
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
