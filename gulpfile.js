@@ -8,6 +8,7 @@ const cleanCSS = require('gulp-clean-css');
 function copy() {
     return gulp.src([
         'app/*.html',
+        'app/favicon.ico',
         'app/**/*.webp',
         'app/**/*.jpg',
         'app/**/*.png',
@@ -48,7 +49,7 @@ function processCss() {
     }))
     .pipe(gulp.dest('docs/styles'));
 }
- 
+
 gulp.task('processCss', processCss);
 
 function watch() {
@@ -59,3 +60,4 @@ function watch() {
 gulp.task('watch', watch);
 
 gulp.task('buildAndServe', gulp.series(processJs, processCss, copy, serve));
+gulp.task('build', gulp.series(processJs, processCss, copy));
